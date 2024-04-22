@@ -29,4 +29,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: Naka223/ohtuvarasto
+      - name: Lint
+        run: poetry run pylint src
 
